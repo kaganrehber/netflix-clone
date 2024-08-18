@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function FAQ() {
   const [expanded, setExpanded] = useState(null);
 
-  const toggleQuestion = (index) => {
+  const toggleQuestion = (index: any) => {
     setExpanded(expanded === index ? null : index);
   };
 
