@@ -1,0 +1,221 @@
+.header {
+  width: 100vw;
+  height: 7vw;
+}
+
+.header > .logo {
+  margin-left: 150px;
+}
+
+.sign-in-container {
+  width: 25vw;
+  height: 100vh;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(13, 14, 14, 0.889);
+  margin-bottom: 150px;
+  max-width: fit-content;
+}
+
+.sign-in-container > h1 {
+  text-align: left;
+  font-size: 26px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.sign-in-container > .form > form,
+.sign-in-code {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem 0;
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.sign-in-container > .form > form #email,
+.sign-in-container > .form > form #password,
+.sign-in-container > .form > form #sign-in {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+
+.sign-in-container > .form > form > div {
+  position: relative;
+  height: max-content;
+}
+
+.sign-in-container > .form > form #email,
+.sign-in-container > .form > form #password {
+  background: rgba(13, 14, 14, 0.5);
+  border: grey solid 1px;
+  height: 3.4vw;
+  position: relative;
+}
+
+.sign-in-container > .form > form #email:invalid,
+.sign-in-container > .form > form #password:invalid {
+  border: #e50914 solid 1px;
+}
+
+.sign-in-container > .form > form label {
+  position: absolute;
+  top: 1.2rem;
+  left: 0.7rem;
+  transition: 250ms;
+  color: #b5b5b4;
+}
+
+.sign-in-container > .form > form #email:focus,
+.sign-in-container > .form > form #password:focus {
+  outline: solid white 2px;
+}
+
+.sign-in-container > .form > form #email:focus ~ label,
+.sign-in-container > .form > form #password:focus ~ label {
+  position: absolute;
+  font-size: 11px;
+  top: 0.4rem;
+  cursor: text;
+  pointer-events: none;
+}
+
+/* .sign-in-container > .form > form #email:not(:placeholder-shown) ~ label,
+.sign-in-container > .form > form #password:not(:placeholder-shown) ~ label {
+  position: absolute;
+  font-size: 11px;
+  top: 0.4rem;
+} */
+
+.sign-in-container > .form > form .focused,
+.sign-in-container > .form > form .focused {
+  position: absolute;
+  font-size: 11px;
+  top: 0.4rem;
+}
+
+.sign-in-container > .form > form > #sign-in {
+  background-color: #e50914;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 2.5vw;
+  margin-bottom: 1rem;
+}
+
+.sign-in-container > .form > form > #sign-in:hover {
+  background-color: #c11119;
+}
+
+.sign-in-container > .form > .sign-in-code > #sign-in-code {
+  border: rgb(112, 112, 112) hidden 2px;
+  background: rgba(112, 112, 112, 0.5);
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.sign-in-container > .form > .sign-in-code > #sign-in-code:hover {
+  background: rgba(71, 71, 71, 0.5);
+}
+
+.sign-in-container > .form > .forgot-password > #forgot-password:hover {
+  color: rgb(112, 112, 112);
+  text-decoration: underline;
+}
+
+.sign-in-container > .form > .forgot-password {
+  margin-bottom: 30px;
+}
+
+.sign-in-container > .form > .remember-me,
+.sign-up {
+  text-align: left;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+.sign-in-container > .form > .remember-me > #remember-me {
+  margin-right: 5px;
+}
+
+.sign-in-container > .form > .sign-up {
+  display: flex;
+  flex-direction: row;
+}
+
+.sign-in-container > .form > .sign-up > p {
+  font-weight: normal;
+  color: #b5b5b4;
+  margin-right: 4px;
+}
+
+.sign-in-container > .form > .sign-up > Link {
+  font-weight: bold;
+  color: white;
+}
+
+.sign-in-container > .form > .sign-up > #sign-up-now:hover {
+  text-decoration: underline;
+}
+
+.sign-in-container > .information {
+  text-align: left;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 12px;
+  color: #b5b5b4;
+  max-width: fit-content;
+}
+
+.sign-in-container > .information > p {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.sign-in-container > .information > p > #learn-more,
+#privacy,
+#tos {
+  color: blue;
+}
+
+.sign-in-container > .information > p > #learn-more:hover,
+#privacy:hover,
+#tos:hover {
+  text-decoration: underline;
+}
+
+.sign-in-container > .form > form > p {
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #b5b5b4;
+}
+
+.sign-in-page {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+}
+
+.sign-in-page > .background-image {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}

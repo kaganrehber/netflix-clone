@@ -1,0 +1,34 @@
+.tv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 50vw;
+}
+
+.text h1 {
+  font-size: 250%;
+  font-weight: bold;
+}
+
+.text p {
+  font-size: 125%;
+}
+
+.text,
+.tv-player {
+  margin: 50px;
+  padding: 10px;
+}
+
+#tv-frame {
+  margin-right: 65px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.tv-player {
+  position: relative;
+}

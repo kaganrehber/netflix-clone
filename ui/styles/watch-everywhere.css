@@ -1,0 +1,18 @@
+.watch-everywhere {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50vw;
+}
+
+.watch-everywhere > .devices > .images {
+  position: absolute;
+  z-index: 5555;
+}
+
+.watch-everywhere > .devices > .video-player {
+  position: relative;
+  left: 10px;
+  width: 350px;
+}

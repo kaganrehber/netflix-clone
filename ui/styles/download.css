@@ -1,0 +1,51 @@
+.download,
+.download-notif {
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50vw;
+}
+.download-notif {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* Ensures the notification is above the phone image */
+  background-color: black;
+  width: 61%;
+  height: 125px;
+  border: gray 3px solid;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
+.text span {
+  color: blue;
+}
+
+.image-container {
+  width: 50vw;
+  position: relative;
+}
+
+.phone-image {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 250%;
+  font-weight: bolder;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.text-container span {
+  font-size: 150%;
+}

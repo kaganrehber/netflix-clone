@@ -1,0 +1,29 @@
+.kids-container {
+  height: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.text-container h2 {
+  font-size: 250%;
+  font-weight: bolder;
+}
+
+.text-container p {
+  font-size: 150%;
+}
+
+.image-container {
+  /* width: 50vw;
+  height: 50vw; */
+  justify-content: center;
+  align-items: center;
+}

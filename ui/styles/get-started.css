@@ -1,0 +1,114 @@
+.get-started {
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 50vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.get-started > .background-image {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sign-in {
+  background-color: #e50914;
+  border: #e50914 2px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 2px;
+  width: 105px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-right: 3rem;
+  margin-top: 1.2rem;
+}
+
+.title {
+  margin: auto;
+  padding-top: 65px;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title h1 {
+  margin: auto;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 250%;
+}
+
+.title p {
+  margin: auto;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.get-started-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.email-description-text {
+  margin: auto;
+  padding: 15px;
+}
+
+.get-started-input {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+#get-started-email {
+  background-color: #5d5d5d;
+  color: white;
+  border: #b0b0b0 2px solid;
+  border-radius: 5px;
+  height: 50px;
+  margin: 5px;
+  padding: 3px;
+  width: 407px;
+}
+
+.get-started-submit {
+  background-color: #e50914;
+  border: #e50914 2px solid;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 50px;
+  margin: 5px;
+  padding: 3px;
+  font-weight: bold;
+}
