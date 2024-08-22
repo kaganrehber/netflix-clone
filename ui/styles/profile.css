@@ -1,0 +1,10 @@
+.page {
+  background-color: black;
+}
+
+.page > .profile {
+  width: 75%;
+  border: white solid 2px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}

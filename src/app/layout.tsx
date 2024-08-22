@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { UserProvider } from "@/contexts/User";
+import { cookies } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const _userInfo = JSON.parse(cookies().get("key")?.value ?? "{}");
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <UserProvider userInfo={_userInfo}>{children}</UserProvider>
+      </body>
     </html>
   );
 }

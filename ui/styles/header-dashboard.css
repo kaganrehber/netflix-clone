@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > .logo-navbar {
+  flex-direction: row;
+  display: flex;
+}
+
+.header > .logo-navbar > .logo {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+.header > .logo-navbar > .navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header > .logo-navbar > .navbar > .link {
+  padding: 0.5rem;
+}
+
+.header > .logo-navbar > .navbar > .link:hover {
+  text-decoration: underline;
+}
+
+.header > .dropdown {
+  margin-right: 3rem;
+  margin-top: 2rem;
+  color: white;
+  margin: 1.6rem 4rem;
+  font-size: 1.3rem;
+  z-index: 500;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header > .dropdown > .button {
+  justify-content: left;
+  transition: 250ms ease-in-out;
+  padding: 0.3rem 1rem 0.3rem 0;
+}
+
+.header > .dropdown > .button > button:hover {
+  text-decoration: underline;
+}
+
+.header > .dropdown > .dropdown-select {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  z-index: 500;
+}
+
+.header > .dropdown > .dropdown-select.expanded {
+  max-height: 100px;
+  z-index: 500;
+}
+
+.header > .dropdown > .dropdown-select.expanded > ul > #profile-button:hover,
+.header > .dropdown > .dropdown-select.expanded > ul > li:hover {
+  text-decoration: underline;
+}

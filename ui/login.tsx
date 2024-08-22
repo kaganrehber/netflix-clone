@@ -1,12 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { useActionState, useState } from "react";
+import { useActionState, useContext, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import "./styles/login.css";
+import { UserContext } from "@/contexts/User";
 
 export default function Login() {
+  // contexts
+  const { setUser } = useContext(UserContext);
+
+  // states
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
@@ -43,11 +48,12 @@ export default function Login() {
     const data = await response.json();
 
     if (!response.ok) {
-      setError(data.error);
+      setError(data.message);
     } else {
       // Handle successful login (e.g., redirect to dashboard)
       console.log("Login successful", data);
-      router.push("/");
+      setUser && setUser(data.data);
+      router.push("/dashboard");
     }
   };
 
@@ -132,6 +138,7 @@ export default function Login() {
               </form>
             )}
             <p>OR</p>
+            {error}
             <div className="sign-in-code">
               <button id="sign-in-code" onClick={handleShowSignInCode}>
                 {buttonText}

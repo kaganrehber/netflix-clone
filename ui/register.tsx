@@ -10,6 +10,7 @@ export default function Register() {
   const emailQuery = searchParams?.get("email");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
   const [error, setError] = useState(null);
   const router = useRouter();
 
@@ -21,7 +22,7 @@ export default function Register() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ email, name, password }),
     });
 
     const data = await response.json();
@@ -59,6 +60,18 @@ export default function Register() {
             />
             <label htmlFor="email" className={email ? "focused" : ""}>
               Email Address
+            </label>
+          </div>
+          <div className="input-field">
+            <input
+              id="name"
+              name="name"
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <label htmlFor="name" className={name ? "focused" : ""}>
+              Name
             </label>
           </div>
           <div className="input-field">
