@@ -1,3 +1,23 @@
 .page {
   background-color: black;
 }
+.page > .movies > .popular > ul {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  scrollbar-base-color: black;
+  scrollbar-color: black;
+}
+
+.movie-poster {
+  margin: 1rem;
+  width: 10rem;
+  position: relative;
+  border: groove grey 0.3rem;
+}
+
+.movie-poster > label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
