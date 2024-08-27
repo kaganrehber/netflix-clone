@@ -31,8 +31,6 @@
 }
 
 .header > .dropdown {
-  margin-right: 3rem;
-  margin-top: 2rem;
   color: white;
   margin: 1.6rem 4rem;
   font-size: 1.3rem;
@@ -40,6 +38,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  background-color: black;
 }
 
 .header > .dropdown > .button {
@@ -65,6 +64,7 @@
 }
 
 .header > .dropdown > .dropdown-select.expanded > ul > #profile-button:hover,
-.header > .dropdown > .dropdown-select.expanded > ul > li:hover {
+.header > .dropdown > .dropdown-select.expanded > ul > li:hover,
+.header > .dropdown > .dropdown-select.expanded > ul > #watch-list:hover {
   text-decoration: underline;
 }

@@ -67,6 +67,9 @@ export default function HeaderDashboard() {
             <Link href="/profile" id="profile-button">
               <li>Profile</li>
             </Link>
+            <Link href="/watch-list" id="watch-list">
+              <li>My Watch List</li>
+            </Link>
             <li onClick={handleLogout}>Log Out</li>
           </ul>
         </div>

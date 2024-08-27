@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { UserProvider } from "@/contexts/User";
+import { MediaProvider } from "@/contexts/Media";
 import { cookies } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <UserProvider userInfo={_userInfo}>{children}</UserProvider>
+        <UserProvider userInfo={_userInfo}>
+          <MediaProvider>{children}</MediaProvider>
+        </UserProvider>
       </body>
     </html>
   );

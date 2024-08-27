@@ -1,6 +1,8 @@
 "use client";
 
 import { createContext, useEffect, useState } from "react";
+import { Movie } from "@/types/Movie";
+import { TVShow } from "@/types/TV-show";
 
 interface IUserDto {
   id: number;
@@ -8,6 +10,7 @@ interface IUserDto {
   password: string;
   name: string;
   date: Date;
+  watchList: (Movie | TVShow)[];
 }
 
 type ContextProps = {

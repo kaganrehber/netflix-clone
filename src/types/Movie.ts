@@ -4,5 +4,6 @@ export interface Movie {
   original_title: string;
   overview: string;
   poster_path: string;
-  first_air_date: string;
+  release_date: string;
+  adult: boolean;
 }
